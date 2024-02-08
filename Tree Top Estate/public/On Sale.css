@@ -1,0 +1,50 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 26 May 2023, 20:18:20
+    Author     : isaac
+*/
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+.grid img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: black;
+  border: 2px solid white;
+}

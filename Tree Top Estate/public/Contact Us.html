@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contact us.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Name:</strong> Annie Kalefya</p>
+            <p><strong>Email:</strong> annie.kalefya@example.com</p>
+            <p><strong>Phone:</strong> +27 11 123 4567</p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.970894133582!2d28.00200011443955!3d-26.0950006834534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDM5JzI4LjIiUyAyOMKwMzUnMDUuMCJF!5e0!3m2!1sen!2sza!4v1644232896355!5m2!1sen!2sza" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <form action="#" method="post">
+            <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </div>
+    
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdIZRAgknDW1GoEJaqdCTdGekrbR76aEGz393LynFe82hx-Q/viewform?embedded=true" 
+            width="640" height="838" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</body>
+</html>
+
+
+<script>
+    function clearForm() {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+    }
+</script>
